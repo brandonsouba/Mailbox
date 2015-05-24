@@ -11,8 +11,8 @@
 		D2D6D5F71B0AFFCB0006B46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D5F61B0AFFCB0006B46E /* ViewController.swift */; };
 		D2D6D5FA1B0AFFCB0006B46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D6D5F81B0AFFCB0006B46E /* Main.storyboard */; };
 		D2D6D5FC1B0AFFCB0006B46E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D6D5FB1B0AFFCB0006B46E /* Images.xcassets */; };
-		D2D6D5FF1B0AFFCB0006B46E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D6D5FD1B0AFFCB0006B46E /* LaunchScreen.xib */; };
 		D2D6D60B1B0AFFCB0006B46E /* MailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D60A1B0AFFCB0006B46E /* MailboxTests.swift */; };
+		D2D6D6151B0C51250006B46E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D6141B0C51250006B46E /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		D2D6D5F61B0AFFCB0006B46E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2D6D5F91B0AFFCB0006B46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2D6D5FB1B0AFFCB0006B46E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D2D6D5FE1B0AFFCB0006B46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D2D6D6041B0AFFCB0006B46E /* MailboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D6D6091B0AFFCB0006B46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D6D60A1B0AFFCB0006B46E /* MailboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxTests.swift; sourceTree = "<group>"; };
+		D2D6D6141B0C51250006B46E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				D2D6D5F41B0AFFCB0006B46E /* AppDelegate.swift */,
+				D2D6D6141B0C51250006B46E /* Common.swift */,
 				D2D6D5F61B0AFFCB0006B46E /* ViewController.swift */,
 				D2D6D5F81B0AFFCB0006B46E /* Main.storyboard */,
 				D2D6D5FB1B0AFFCB0006B46E /* Images.xcassets */,
-				D2D6D5FD1B0AFFCB0006B46E /* LaunchScreen.xib */,
 				D2D6D5F21B0AFFCB0006B46E /* Supporting Files */,
 			);
 			path = Mailbox;
@@ -193,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D6D5FA1B0AFFCB0006B46E /* Main.storyboard in Resources */,
-				D2D6D5FF1B0AFFCB0006B46E /* LaunchScreen.xib in Resources */,
 				D2D6D5FC1B0AFFCB0006B46E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D6D5F71B0AFFCB0006B46E /* ViewController.swift in Sources */,
+				D2D6D6151B0C51250006B46E /* Common.swift in Sources */,
 				D2D6D5F51B0AFFCB0006B46E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +242,6 @@
 				D2D6D5F91B0AFFCB0006B46E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D2D6D5FD1B0AFFCB0006B46E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2D6D5FE1B0AFFCB0006B46E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Mailbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Mailbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
