@@ -5,6 +5,6 @@
 	
 2. Which required and optional stories have you completed?
 All required + compose optional. 
-![alt tag](https://raw.githubusercontent.com/brandonsouba/CarouselApp/master/assignment2.gif)
+![alt tag](https://raw.githubusercontent.com/brandonsouba/Mailbox/master/assignment3.gif)
 
 
